@@ -8,10 +8,10 @@ description: >
   Machine Intelligence, Science, Bioinformatics, Nature Scientific Data, PLOS
   Computational Biology, and PLOS Biology for new relevant papers since the last run,
   logs DOI links to a dated file for provenance, and reports a clickable DOI list back
-  to the user. Trigger on "run the papers agent", "check for new papers", "weekly
-  literature check", "any new papers this week", "/papers-agent", or when a scheduled
-  weekly routine fires this skill. Not for one-off searches on a specific topic or
-  paper — use general web search for that instead.
+  to the user. User-triggered only, run roughly weekly — not scheduled/automated.
+  Trigger on "run the papers agent", "check for new papers", "weekly literature
+  check", "any new papers this week", or "/papers-agent". Not for one-off searches on
+  a specific topic or paper — use general web search for that instead.
 ---
 
 # papers-agent
@@ -60,8 +60,19 @@ session's context and token cost small.
    path for provenance. Keep this short — the subagent already did the work, you're
    just relaying it.
 
-6. **Clean up.** Delete `state/.last_fetch.json` (it's a scratch file, not meant to be
-   committed) once the subagent has read it.
+6. **Commit and push.** From the repo root:
+   ```bash
+   git add logs/ state/state.json
+   git commit -m "Weekly run: <since> to <until>"
+   git push
+   ```
+   This is what makes the log a real provenance record — without it, next week's run
+   (from a fresh clone or another machine) wouldn't see this run's `last_run_date` and
+   would silently redo work. Skip the commit only if nothing changed (e.g. rerunning
+   same-day with an empty window).
+
+7. **Clean up.** Delete `state/.last_fetch.json` (it's a scratch file, gitignored and
+   not meant to be committed) once the subagent has read it.
 
 ## Notes
 
@@ -70,3 +81,5 @@ session's context and token cost small.
   use ordinary web search instead.
 - If `fetch_recent_papers.py` fails (network error, API down), report that plainly to
   the user and do not update state — the next run should retry the same window.
+- This skill is user-triggered only — do not suggest or set up scheduled/automated
+  runs (cron, cloud routines, etc.) for it.

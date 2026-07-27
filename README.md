@@ -30,16 +30,12 @@ run only queries the days since the previous run and never re-reports the same p
 Symlinked into `~/.claude/skills/papers-agent` and `~/.claude/agents/paper-scout.md`
 so both are available as a Claude Code skill/subagent from any session.
 
-## Running it manually
+## Running it
 
-From within a Claude Code session: `/papers-agent`, or just ask "check for new
-papers this week".
-
-## Weekly automation
-
-A scheduled cloud routine (set up via the `schedule` skill) triggers this weekly so
-it runs without a live session. Since that routine runs in an isolated environment,
-it works against this repo's GitHub remote rather than local state.
+No automation — run this yourself, roughly weekly. From within a Claude Code
+session: `/papers-agent`, or just ask "check for new papers this week". Each run
+commits and pushes the new log + updated state, so the history in git is the
+provenance record.
 
 ## Editing the scope
 
