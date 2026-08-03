@@ -8,9 +8,10 @@ infrastructure, frontier models, and biological/scientific LLMs.
 ## What it does
 
 Once a week it checks **Nature, Nature Methods, Nature Machine Intelligence,
-Science, Bioinformatics, Nature Scientific Data, PLOS Computational Biology, and
-PLOS Biology** for papers published since the last run, filters them against the
-taxonomy in [`references/topics.md`](references/topics.md), and:
+Science, Bioinformatics, Nature Scientific Data, PLOS Computational Biology,
+PLOS Biology, Nucleic Acids Research, and Database (Oxford)** for papers published
+since the last run, filters them against the taxonomy in
+[`references/topics.md`](references/topics.md), and:
 
 - Writes `logs/<date>.md` — a dated, git-tracked record of DOI links for provenance.
 - Reports the same list back as clickable `https://doi.org/...` links.

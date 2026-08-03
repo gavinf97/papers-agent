@@ -22,6 +22,8 @@ JOURNALS = [
     "Scientific Data",
     "PLOS Computational Biology",
     "PLOS Biology",
+    "Nucleic Acids Research",
+    "Database (Oxford)",
 ]
 
 
