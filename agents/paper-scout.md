@@ -23,7 +23,9 @@ Do the following, in order:
    # Papers agent — <since> to <until>
 
    Checked: Nature, Nature Methods, Nature Machine Intelligence, Science,
-   Bioinformatics, Nature Scientific Data, PLOS Computational Biology, PLOS Biology.
+   Bioinformatics, Nature Scientific Data, PLOS Computational Biology, PLOS Biology,
+   Nucleic Acids Research, Database (Oxford), EMBO Reports, The EMBO Journal,
+   Frontiers in Artificial Intelligence.
    Candidates seen: <N>. Kept: <M>.
 
    - [<title>](https://doi.org/<doi>) — *<journal>* — <one-line reason it's relevant>
