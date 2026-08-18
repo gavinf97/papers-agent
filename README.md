@@ -9,7 +9,8 @@ infrastructure, frontier models, and biological/scientific LLMs.
 
 Once a week it checks **Nature, Nature Methods, Nature Machine Intelligence,
 Science, Bioinformatics, Nature Scientific Data, PLOS Computational Biology,
-PLOS Biology, Nucleic Acids Research, and Database (Oxford)** for papers published
+PLOS Biology, Nucleic Acids Research, Database (Oxford), EMBO Reports, The EMBO
+Journal, and Frontiers in Artificial Intelligence** for papers published
 since the last run, filters them against the taxonomy in
 [`references/topics.md`](references/topics.md), and:
 

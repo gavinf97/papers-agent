@@ -6,7 +6,8 @@ description: >
   guidelines, literature-focused meta-research, open science, big AI/ML infrastructure,
   frontier models, biological/scientific LLMs). Checks Nature, Nature Methods, Nature
   Machine Intelligence, Science, Bioinformatics, Nature Scientific Data, PLOS
-  Computational Biology, PLOS Biology, Nucleic Acids Research, and Database (Oxford)
+  Computational Biology, PLOS Biology, Nucleic Acids Research, Database (Oxford),
+  EMBO Reports, The EMBO Journal, and Frontiers in Artificial Intelligence
   for new relevant papers since the last run,
   logs DOI links to a dated file for provenance, and reports a clickable DOI list back
   to the user. User-triggered only, run roughly weekly — not scheduled/automated.

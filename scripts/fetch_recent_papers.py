@@ -24,6 +24,9 @@ JOURNALS = [
     "PLOS Biology",
     "Nucleic Acids Research",
     "Database (Oxford)",
+    "EMBO Reports",
+    "The EMBO Journal",
+    "Frontiers in Artificial Intelligence",
 ]
 
 
