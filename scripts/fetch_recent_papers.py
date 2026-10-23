@@ -27,6 +27,7 @@ JOURNALS = [
     "EMBO Reports",
     "The EMBO Journal",
     "Frontiers in Artificial Intelligence",
+    "Proceedings of the National Academy of Sciences of the United States of America",
 ]
 
 

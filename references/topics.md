@@ -30,5 +30,22 @@ buckets, and be more conservative with the catch-all (bucket 9).
    "cool" AI/ML-for-science advance that doesn't fit neatly above — include at lower
    confidence, and say why in the one-line rationale.
 
+**PNAS only — extra bucket (P).** For papers from PNAS, apply buckets 1–9 as usual
+and *also* keep:
+
+- **P. Protein structure & intrinsically disordered proteins** — major protein
+  structural papers (new experimental structures of notable proteins/complexes via
+  cryo-EM, X-ray, NMR, etc.; significant structural mechanism insights; large-scale
+  or methodological advances in structure determination or prediction), and papers
+  on intrinsically disordered proteins/regions (IDPs/IDRs: conformational ensembles,
+  disorder-to-order transitions, phase separation/condensates driven by disorder,
+  disorder prediction). AI/ML angle not required. Be selective on the "major" part
+  for routine structures (a single incremental structure of an obscure protein is a
+  drop); IDP/IDR papers can be kept more liberally. Flag these in the log with
+  `**[PNAS-structure]**` at the start of the rationale.
+
+This bucket applies to PNAS only — do not use it to keep structural-biology papers
+from other journals.
+
 Drop papers that are purely domain biology/medicine with no AI/ML or meta-research
 angle (e.g. a wet-lab mechanism paper with no computational-methods framing).

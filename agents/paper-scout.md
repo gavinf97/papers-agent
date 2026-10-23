@@ -15,6 +15,10 @@ Do the following, in order:
 1. Read `references/topics.md` in the repo root for the relevance taxonomy.
 2. Read the candidate JSON file.
 3. For each candidate, decide keep/drop against the taxonomy using title + abstract.
+   PNAS candidates (journal is "Proceedings of the National Academy of Sciences...")
+   are checked against the usual buckets **plus** the PNAS-only bucket in
+   `topics.md`; prefix the rationale of any paper kept via that bucket with
+   `**[PNAS-structure]**`.
    Don't overthink borderline cases — a quick relevance judgment is fine, this runs
    weekly and low-stakes misses are cheap to catch next time.
 4. Write `logs/<until-date>.md` (create the `logs/` dir if needed) with this structure:
@@ -25,7 +29,7 @@ Do the following, in order:
    Checked: Nature, Nature Methods, Nature Machine Intelligence, Science,
    Bioinformatics, Nature Scientific Data, PLOS Computational Biology, PLOS Biology,
    Nucleic Acids Research, Database (Oxford), EMBO Reports, The EMBO Journal,
-   Frontiers in Artificial Intelligence.
+   Frontiers in Artificial Intelligence, PNAS.
    Candidates seen: <N>. Kept: <M>.
 
    - [<title>](https://doi.org/<doi>) — *<journal>* — <one-line reason it's relevant>
